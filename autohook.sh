@@ -75,7 +75,7 @@ main() {
             do
                 scriptname=$(basename $file)
                 echo "BEGIN $scriptname"
-                eval $file &> /dev/null
+                eval $file
                 echo "FINISH $scriptname"
             done
         fi
